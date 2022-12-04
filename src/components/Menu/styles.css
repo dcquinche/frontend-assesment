@@ -1,0 +1,18 @@
+.menu {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgba(0, 0, 0, 0.495);
+  padding: 1em;
+  margin-bottom: 2em;
+  width: 100%;
+}
+
+.menu__link {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+}
+
+.menu__link:hover {
+  color: aquamarine;
+}

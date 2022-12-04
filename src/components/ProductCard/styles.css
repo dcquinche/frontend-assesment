@@ -1,0 +1,33 @@
+.card {
+  border: solid black 2px;
+  border-radius: 15px;
+  padding: 2em;
+  width: 300px;
+}
+
+.card__product {
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 1em;
+  font-weight: 700;
+}
+
+.card__figure {
+  width: 100px;
+  height: 100px;
+}
+
+.card__auction {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card__button {
+  border: 0;
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(0, 208, 255);
+  font-weight: 700;
+  padding: 0.5em;
+}

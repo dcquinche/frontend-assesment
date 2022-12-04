@@ -1,0 +1,53 @@
+.profile {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+
+.profile__figure {
+   width: 120px;
+   height: 110px;
+   border-radius: 60px;
+   margin-right: 2em;
+}
+
+.profile__name {
+   margin-top: 1em;
+}
+
+.profile__description, .profile__title, .profile__listTitle {
+  text-align: center;
+}
+
+.profile__name, .profile__text, .profile__contact, .profile__listTitle {
+  margin-bottom: 1em;
+}
+
+.profile__listKnowledge {
+  justify-content: left;
+}
+
+.profile__list {
+  margin-left: 2em;
+}
+
+.profile__listTitle {
+  margin-top: 2em;
+}
+
+@media(min-width: 768px) {
+  .profile {
+    width: 600px;
+  }
+  .profile__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+  }
+
+  .profile__name {
+    margin-top: 3em;
+  }
+}
