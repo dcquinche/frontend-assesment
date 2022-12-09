@@ -24,6 +24,12 @@ const ProductCard = ({ image, title, id }) => {
     return () => clearInterval(interval);
   });
 
+  const min = `0${minutes}`;
+  let sec = seconds;
+  if (seconds < 10) {
+    sec = `0${seconds}`;
+  }
+
   return (
     <div className="card">
       <section className="card__product">
@@ -31,8 +37,10 @@ const ProductCard = ({ image, title, id }) => {
         <p>{title}</p>
       </section>
       <section className="card__auction">
-        <p>{minutes}:{seconds}</p>
-        <Link to={`/product-detail/${id}`} id="linkDetail"><button className="card__button" type="submit" disabled={seconds === 0 && minutes === 0}>Go to Detail</button></Link>
+        <p>{min}:{sec}</p>
+        <Link to={`/product-detail/${id}`}>
+          { seconds === 0 && minutes === 0 ? <button className="card__button--disabled" type="submit" disabled>Time has Expired</button> : <button className="card__button" type="submit">Go to Detail</button>}
+        </Link>
       </section>
     </div>
   );
